@@ -32,7 +32,7 @@
       <header class="bloc bgc-white l-bloc" id="bloc-0">
         <img src="/img/logo redim.svg" alt="logo du site la Panthère" />
         <nav class="header_nav">
-          <a href="index.html">Accueil</a>
+          <a class="accueil_contact" href="index.html">Accueil</a>
         </nav>
       </header>
       <!-- bloc-0 END -->
@@ -66,14 +66,14 @@
 
       <!-- bloc-7 -->
       <div class="bloc bgc-white l-bloc" id="bloc-7">
-        <div class="container bloc-lg">
+        <div class="bloc-lg gestion_formu--carte">
           <div class="row">
             <div class="col-sm-6">
               <form
                 id="form_1"
                 novalidate
                 success-msg="Message envoyé."
-                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
+                fail-msg="Nos serveurs sont actuellement indisponible, veuillez nous excuser"
               >
                 <div class="form-group">
                   <label> Nom </label>
@@ -117,12 +117,29 @@
                 </button>
               </form>
             </div>
-            <div class="col-sm-6">
-              <p>
-                contact@agencelapanthere.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
-                de 9h à 18h, du lundi au vendredi<br />
-              </p>
+          </div>
+          <div class="page_contact--info">
+            <div class="nous_trouver">
+              <dl>
+                <dt>Information de contact :</dt>
+                <dd>
+                  <a href="mailto:contact@agencelapanthere.com"
+                    >Envoyez nous un E-Mail</a
+                  >
+                </dd>
+                <dd>2 place Sathonay 69001 Lyon</dd>
+                <dd>Ouvert de 9h à 18h, du lundi au vendredi</dd>
+              </dl>
             </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695.7706326398068!2d4.829571847799846!3d45.769536240379885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1659392412622!5m2!1sfr!2sfr"
+              width="500"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
