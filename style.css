@@ -10,7 +10,7 @@ body {
 a,
 button {
   transition: all 0.3s ease-in-out;
-  outline: none !important;
+  outline: none;
 }
 
 a:hover {
@@ -66,10 +66,10 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-  -webkit-background-size: auto !important;
-  -moz-background-size: auto !important;
-  -o-background-size: auto !important;
-  background-size: auto !important;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
 }
 
 .bg-repeat {
@@ -88,11 +88,6 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-}
-
-.texture-paper::before {
-  background: url("img/texture-paper.png");
-  background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -131,8 +126,7 @@ a:hover {
 .d-bloc h3 a,
 .d-bloc h4 a,
 .d-bloc h5 a,
-.d-bloc h6 a,
-.d-bloc p a {
+.d-bloc h6 a {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -343,7 +337,7 @@ a:hover {
 }
 
 .navbar-toggle:hover {
-  background: transparent !important;
+  background: transparent;
 }
 
 .navbar-toggle .icon-bar {
@@ -401,7 +395,7 @@ a:hover {
 }
 
 .nav > li > .dropdown a {
-  background: none !important;
+  background: none;
   display: block;
   padding: 14px 15px;
 }
@@ -428,7 +422,7 @@ nav .caret {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  margin: 6px -5px 0 0 !important;
+  margin: 6px -5px 0 0;
   float: right;
 }
 
@@ -458,7 +452,7 @@ nav .caret {
 }
 
 button {
-  outline: none !important;
+  outline: none;
 }
 
 .btn-rd {
@@ -474,11 +468,12 @@ button {
 }
 
 .icon-md {
-  font-size: 30px !important;
+  font-size: 40px;
+  text-shadow: 1px 1px #000000;
 }
 
 .icon-lg {
-  font-size: 60px !important;
+  font-size: 60px;
 }
 
 .sm-shadow {
@@ -651,7 +646,7 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #575757 !important;
+  color: #575757;
 }
 
 .container {
@@ -677,7 +672,7 @@ a {
 }
 
 p {
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -692,7 +687,7 @@ p {
 
 .cta-hero {
   margin-top: 22px;
-  color: #ffffff !important;
+  color: #ffffff;
   text-transform: uppercase;
   padding: 12px 28px 12px 28px;
   font-size: 16px;
@@ -702,6 +697,12 @@ p {
 .social {
   max-width: 400px;
   margin: auto auto auto auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  font-size: 40px;
+  color: white;
 }
 
 h2 {
@@ -713,7 +714,7 @@ h3 {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #333333 !important;
+  color: #333333;
 }
 
 .med-width-whitespace {
@@ -723,11 +724,11 @@ h3 {
 }
 
 h1 {
-  color: #333333 !important;
+  color: #333333;
 }
 
 h4 {
-  color: #333333 !important;
+  color: #333333;
 }
 
 .icons {
@@ -736,7 +737,7 @@ h4 {
 }
 
 .white {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 .portfolio-thumb {
@@ -752,14 +753,9 @@ h4 {
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
-.black-background {
-  background-color: rgba(165, 147, 99, 0.7);
-  padding: 40px 40px 40px 40px;
-}
-
 .bold-link {
   font-weight: 900;
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
 
 .bgc-white {
@@ -775,42 +771,38 @@ h4 {
 }
 
 .tc-white {
-  color: #f3976c !important;
+  color: #f3976c;
 }
 
 .btn-atomic-tangerine {
   background: #f3976c;
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 .btn-atomic-tangerine:hover {
-  background: #c27956 !important;
-  color: #ffffff !important;
+  background: #c27956;
+  color: #ffffff;
 }
 
 .ltc-white {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 .ltc-white:hover {
-  color: #cccccc !important;
+  color: #cccccc;
 }
 
 .ltc-atomic-tangerine {
-  color: #f3976c !important;
+  color: #f3976c;
 }
 
 .ltc-atomic-tangerine:hover {
-  color: #c27956 !important;
+  color: #c27956;
 }
 
 .icon-dark-slate-blue {
-  color: #364577 !important;
-  border-color: #364577 !important;
-}
-
-.bg-dots-bg {
-  background-image: url("img/dots-bg.png");
+  color: #364577;
+  border-color: #364577;
 }
 
 .bg-lines-h2-bg {
@@ -833,6 +825,7 @@ header {
   align-items: center;
   height: 75px;
   margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 header img {
@@ -843,8 +836,109 @@ header img {
 .header_nav {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 125px;
+  justify-content: space-evenly;
+  width: 200px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.article--1 img {
+  width: 100px;
+}
+
+.fond-noir {
+  background-color: #000000b2;
+  padding: 40px;
+}
+
+.black-background {
+  background-color: #000000b2;
+  padding: 40px;
+}
+
+.recentrer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.encadrement {
+  padding: 40px;
+  width: 600px;
+}
+main article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.description_agence {
+  align-self: center;
+  font-size: 18px;
+  max-width: 634px;
+  text-align: center;
+  color: #575757;
+  padding: 2%;
+}
+
+.citation-texte {
+  align-self: center;
+  font-size: 18px;
+  max-width: 634px;
+  text-align: center;
+  color: #575757;
+  font-style: italic;
+  padding: 0 15px;
+  white-space: wrap;
+}
+
+.citation-texte span {
+  color: #575757;
+  font-size: 17px;
+  padding: 2%;
+}
+
+.contactez-equipe {
+  color: white;
+}
+.text-center h2 {
+  align-self: center;
+  font-size: 24px;
+  max-width: 634px;
+  text-align: center;
+  color: #575757;
+  font-style: italic;
+}
+
+.texte_sous_icone {
+  font-size: 14px;
+}
+
+.flex-texte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ajout refonte page contact */
+
+.titre_contact--titre {
+  color: #f3976c;
+  text-align: center;
+}
+
+.titre_contact--texte {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.article_contact--1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/agence-la-panthere.jpg);
 }
 
 @media (max-width: 1024px) {
@@ -912,6 +1006,16 @@ header img {
 }
 
 @media (max-width: 767px) {
+  .header_nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 35px;
+  }
+  .portfolio-row a {
+    display: flex;
+    justify-content: center;
+  }
   .page-container {
     overflow-x: hidden;
     position: relative;
@@ -924,8 +1028,8 @@ header img {
   h6,
   p,
   #disqus_thread {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .b-parallax {
     background-attachment: scroll;
@@ -933,7 +1037,7 @@ header img {
   .navbar .nav {
     padding-top: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-    float: none !important;
+    float: none;
   }
   .navbar.row {
     margin-left: 0;
@@ -958,7 +1062,7 @@ header img {
   }
   .dropdown .dropdown a .caret {
     float: none;
-    margin: 5px 0 0 10px !important;
+    margin: 5px 0 0 10px;
     border: 4px solid black;
     border-bottom-color: transparent;
     border-right-color: transparent;
