@@ -118,7 +118,6 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -134,7 +133,6 @@ a:hover {
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
 .d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
 .d-bloc h1 a:hover,
@@ -469,9 +467,14 @@ button {
 
 .icon-md {
   font-size: 40px;
-  text-shadow: 1px 1px #000000;
+  color: black;
+  transition: 1s;
 }
 
+.d-bloc a:hover .icon-md {
+  color: white;
+  text-shadow: 1px 2px #000000;
+}
 .icon-lg {
   font-size: 60px;
 }
@@ -823,14 +826,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
   margin-top: 15px;
   flex-wrap: wrap;
+  height: auto;
 }
 
 header img {
   width: 300px;
   height: 50px;
+  min-width: 220px;
+  padding-bottom: 6px;
 }
 
 .header_nav {
@@ -950,6 +955,13 @@ main article {
   justify-content: space-evenly;
   align-items: flex-start;
 }
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 1024px) {
   .bloc {
     padding-left: 20px;
@@ -1015,12 +1027,11 @@ main article {
 }
 
 @media (max-width: 767px) {
-  .header_nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 35px;
+  header img {
+    width: 80%;
+    min-width: 220px;
   }
+
   .portfolio-row a {
     display: flex;
     justify-content: center;
