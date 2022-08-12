@@ -960,7 +960,25 @@ main article {
   display: flex;
   flex-direction: column;
 }
+.liste_contact {
+  margin: 0;
+  margin-bottom: 15px;
+}
 
+dt {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+}
+
+dd {
+  color: #000000;
+  margin-inline-start: 0px;
+}
+
+label {
+  color: black;
+}
 @media (max-width: 1024px) {
   .bloc {
     padding-left: 20px;
@@ -1031,6 +1049,9 @@ main article {
     min-width: 220px;
   }
 
+  iframe {
+    display: none;
+  }
   .portfolio-row a {
     display: flex;
     justify-content: center;
