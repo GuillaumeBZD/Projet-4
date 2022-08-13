@@ -6,7 +6,6 @@
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -16,7 +15,6 @@ html {
 body {
   margin: 0;
 }
-
 
 article,
 aside,
@@ -2461,6 +2459,9 @@ pre code {
   }
 }
 
+.gestion_formulaire--form {
+  width: unset;
+}
 @media (min-width: 992px) {
   .col-md-1,
   .col-md-10,
@@ -5123,6 +5124,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-static-top .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-collapse {
+    width: 100vw;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 }
 
