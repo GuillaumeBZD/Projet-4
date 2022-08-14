@@ -805,17 +805,13 @@ h4 {
   border-color: #364577;
 }
 
-.bg-lines-h2-bg {
-  background-image: url("img/lines-h2-bg.png");
-}
-
 .bg-banniere {
   background-image: url("img/agence-la-panthere.jpg");
   background-size: cover;
 }
 
 .bg-presentation {
-  background-image: url("img/image-de-presentation.bmp");
+  background-image: url("img/image-de-presentation.jpeg");
 }
 
 /* ajout refonte */
@@ -974,7 +970,6 @@ main article {
   padding: 2rem;
   box-shadow: 4px 4px 6px #e6e6e6;
 }
-
 
 .page_contact--info {
   background-color: rgba(250, 250, 250, 0.979);
