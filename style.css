@@ -827,7 +827,7 @@ header {
 
 header img {
   width: 300px;
-  height: 50px;
+  height: 62px;
   min-width: 220px;
   padding-bottom: 6px;
 }
@@ -928,12 +928,18 @@ main article {
 .titre_contact--titre {
   color: #f3976c;
   text-align: center;
+  margin: 0;
 }
 
 .titre_contact--texte {
   color: white;
   font-size: 16px;
   text-align: center;
+  margin-top: 15px;
+}
+
+.titre_contact--boite {
+  padding: 50px;
 }
 
 .article_contact--1 {
@@ -1019,6 +1025,10 @@ label {
 
 iframe {
   margin-bottom: 10px;
+}
+
+.magie-magie {
+  opacity: 1;
 }
 @media (max-width: 1024px) {
   .bloc {
